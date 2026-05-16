@@ -7,4 +7,3 @@ scikit-learn
 Pillow
 plotly
 pandas
-cv2
