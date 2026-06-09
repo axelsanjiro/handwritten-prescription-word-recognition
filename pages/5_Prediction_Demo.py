@@ -90,8 +90,7 @@ if uploaded_file is not None:
                 # Reshape array 1D menjadi 2D untuk input Scikit-Learn (1 baris, N kolom)
                 X_input = feat_vector.reshape(1, -1)
                 
-                # Ajaibnya: ml_pipeline otomatis melakukan Standarisasi (Scaler) 
-                # dan mereduksi dimensi (PCA) pada X_input sebelum masuk ke SVM/KNN/RF!
+                # mereduksi dimensi (PCA) pada X_input sebelum masuk ke SVM/KNN/RF!
                 prediction = ml_pipeline.predict(X_input)
                 label_prediksi = prediction[0]
                 

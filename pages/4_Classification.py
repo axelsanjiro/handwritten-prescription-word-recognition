@@ -87,7 +87,6 @@ def live_extract_features(feature_choice, max_samples):
             # 4. ZERNIKE MOMENTS
             f_zer = calculate_zernike_heatmap(img_norm).flatten()
             
-            # --- SELEKSI FITUR BERDASARKAN PILIHAN USER ---
             if "HOG" in feature_choice:
                 feat = f_hog
             elif "LBP" in feature_choice:
